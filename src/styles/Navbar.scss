@@ -1,0 +1,81 @@
+@import 'Colors';
+
+
+
+nav {
+    background-color: $Redish;
+    display: flex;
+    height: 100px;
+}
+
+
+
+
+.logo {
+    width: 50px;
+}
+
+
+.nav-container, .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.links {
+    display: none;
+    list-style: none;
+    gap: 1em;
+    height: 100px;
+
+    li {
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5em;
+        color: white;
+        text-wrap: nowrap;
+
+        
+
+        &:hover {
+            background: #d4aaaa;
+        }
+    }
+}
+
+
+.social-icons {
+    display: none;
+}
+
+
+.fa-bars {
+    color: white; 
+    font-size:2rem;
+}
+
+.fa-brands {
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media all and (min-width: 1000px) {
+   .nav-toggle {
+    display: none;
+   }
+
+    .social-icons {
+        display: flex;
+        gap: 1.1em;
+    }
+
+    .links {
+        display: flex;
+    }
+}
